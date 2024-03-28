@@ -1,81 +1,152 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hanane</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
+  <!-- Meta tags for character set and viewport -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Title of the webpage -->
+  <title>Hanane</title>
+  <style>
+    /* CSS Styles */
+    /* Resetting default styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        header {
-            background-color: #fff;
-            color: #fff;
-            text-align: center;
-            padding: 1em;
-        }
+    /* Body styles */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      text-align: center; /* Center text for the whole body */
+    }
 
-        section {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
+    /* Header styles */
+    header {
+      background-color: #e601ff; /* Background color */
+      color: #fff; /* Text color */
+      padding: 1rem; /* Padding */
+      text-align: center; /* Center align text */
+    }
 
-        h2, h3 {
-            color:#333;
-        }
+    header h1 {
+      margin: 0; /* Remove margin for h1 */
+    }
 
-        h1  {
-            color: #fff;
-        }
+    /* Navigation styles */
+    nav ul {
+      list-style-type: none; /* Remove default list style */
+      margin-top: 1rem; /* Add margin to top */
+      padding: 0; /* Reset padding */
+      display: inline-block; /* Center the nav */
+    }
 
-        .project {
-            margin-bottom: 20px;
-        }
+    nav ul li {
+      display: inline; /* Display items inline */
+      margin-right: 1rem; /* Margin between items */
+    }
 
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1em;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    nav ul li a {
+      color: #000000; /* Link color */
+      text-decoration: none; /* Remove underline */
+    }
+
+    /* Main content styles */
+    main {
+      padding: 2rem; /* Padding for main content */
+    }
+
+    section {
+      margin-bottom: 2rem; /* Margin between sections */
+    }
+
+    /* Footer styles */
+    footer {
+      background-color: #e601ff; /* Changed to pink background color */
+      color: #fff; /* Text color */
+      text-align: center; /* Center align text */
+      padding: 1rem; /* Padding */
+    }
+
+    /* Centering Images and Videos */
+    .profile-img, iframe {
+      display: block; /* Display as block element */
+      margin: 0 auto; /* Center horizontally */
+    }
+
+    .profile-img {
+      border-radius: 50%; /* Make the image circular */
+      width: 150px; /* Set width */
+      height: 150px; /* Set height */
+      object-fit: cover; /* Cover the entire area */
+    }
+
+    iframe {
+      /* Adjust width and height as needed, keeping margin:auto for centering */
+      width: 560px; /* Example width */
+      height: 315px; /* Example height */
+    }
+
+    /* Smaller font size for the subtitle */
+    .subtitle {
+      font-size: 0.8em; /* Adjust the font size as needed */
+    }
+  </style>
 </head>
 <body>
+  <!-- Header section -->
+  <header>
+    <h1>Hananeh Mohsen <br> <span class="subtitle">(Software Engineering Student)</span></h1>
+    <!-- Navigation menu -->
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
-    <header>
-        <a href="poster.jpg" download="poster">
-        <img src="poster.jpg" alt="Your Name's Photo">
-    </a>
-        <h1>hanane</h1>
-        <p>student</p>
-    </header>
+<!-- Main content section -->
+<main>
+  <!-- Image slot -->
+  <img src="https://iili.io/JjwRD1S.jpg" alt="Hananeh Mohsen" class="profile-img">
 
-    <section>
-        <h2>About Me</h2>
-        <p>student at Qaiwan International University</p>
+  <!-- About section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm Hananeh Mohsen, a software engineering student at Qaiwan International University. I'm passionate about solving problems with technology and enjoy staying updated on the latest trends. I enjoy collaborating on projects. Excited about the endless possibilities in the tech industry, I aim to make a positive impact through innovative solutions. Let's connect and create something amazing together!</p>
     </section>
 
-
-    <section>
-        <h2>Contact</h2>
-        <p>Email: hmqiu230005@uniq.edu.iq</p>
-        <p>LinkedIn: linkedin.com/yourprofile</p>
-      
+    <!-- My Projects section -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <p>Project 1: Poster</p>
+      <a href="https://freeimage.host/i/JjwGEuI"><img src="https://iili.io/JjwGEuI.md.jpg" alt="Project 1 poster" border="0"></a>
+      <p>Project 2: Korek Company Visit</p>
+      <!-- Embedding YouTube video for Project 2 -->
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/HhOeckc0XAk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <p>Project 3: Miss Tara's Report:</p>
+      <!-- Button to open PDF link -->
+      <a href="https://files.fm/u/mvwvjnqsg3" target="_blank" style="background-color: #e601ff; color: white; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; margin: 4px 2px; cursor: pointer; border-radius: 12px;">Click here for PDF</a>
+<p>Project 4: Korek's Report:</p>
+<a href="https://files.fm/u/w73n6gpe8m" target="_blank" style="background-color: #e601ff; color: white; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; margin: 4px 2px; cursor: pointer; border-radius: 12px;">Click here for PDF</a>
+<p>Project 5: Design Thinking:</p>
+<a href="https://files.fm/u/k2behpxe76" target="_blank" style="background-color: #e601ff; color: white; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; margin: 4px 2px; cursor: pointer; border-radius: 12px;">Click here for PDF</a>
     </section>
 
-    <footer>
-        &copy; 2024 Your Portfolio
-    </footer>
+    <!-- Contact section -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>Email: Hmqiu230005@uniq.edu.iq</p>
+      <p>Phone: 009647731785853</p>
+    </section>
+  </main>
 
+  <!-- Footer section -->
+  <footer>
+    <p>&copy; 2024 Hananeh Mohsen. All Rights Reserved.</p>
+  </footer>
 </body>
 </html>
