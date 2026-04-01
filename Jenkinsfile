@@ -6,15 +6,21 @@ pipeline {
     }
 
     stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello from GitHub + Jenkins 🚀'
+            }
+        }
+
         stage('Build') {
             steps {
-                bat 'echo Building app...'
+                bat 'echo Building project...'
             }
         }
 
         stage('Test') {
             steps {
-                bat 'echo Testing app...'
+                bat 'echo Running tests...'
             }
         }
 
